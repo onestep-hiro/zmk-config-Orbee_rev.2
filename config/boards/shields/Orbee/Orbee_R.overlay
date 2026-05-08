@@ -65,3 +65,7 @@
     status = "okay";
 };
 
+&xiao_serial {
+    status = "disabled";
+};
+
