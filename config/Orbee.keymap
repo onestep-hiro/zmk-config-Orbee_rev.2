@@ -66,9 +66,9 @@
         default_layer {
             bindings = <
 &lt 3 Q           &kp W                  &kp E  &kp R                     &kp T                                          &kp Y  &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &lt 6 S                &kp D  &kp F                     &kp G                &mkp MB1       &none      &kp H  &kp J  &kp K      &kp L    &mt LEFT_CONTROL ENTER
-&mt LEFT_SHIFT Z  &kp X                  &kp C  &kp V                     &kp B                &mkp MB2       &none      &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp C_PLAY
+&kp A             &lt 6 S                &kp D  &kp F                     &kp G                &none          &none      &kp H  &kp J  &kp K      &kp L    &mt LEFT_CONTROL ENTER
+&mt LEFT_SHIFT Z  &kp X                  &kp C  &kp V                     &kp B                &none          &none      &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -78,19 +78,19 @@
             bindings = <
 &kp EXCLAMATION     &kp AT_SIGN       &kp HASH                  &kp DOLLAR             &kp PERCENT                      &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)       &kp LS(LA(LC(LG(O))))  &kp LC(LG(N))  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL     &kp MINUS             &kp SEMICOLON
-&kp LEFT_SHIFT      &trans            &trans                    &kp LG(RIGHT_BRACKET)  &kp LC(LG(C))  &trans    &trans  &kp EXCLAMATION   &kp GRAVE          &kp SQT       &kp NON_US_BACKSLASH  &kp RIGHT_SHIFT
-&trans              &trans            &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(N4))         &trans         &trans    &mo 3   &kp LG(SPACE)                                                            &none
+&kp LEFT_SHIFT      &none             &none                     &kp LG(RIGHT_BRACKET)  &kp LC(LG(C))  &none     &trans  &kp EXCLAMATION   &kp GRAVE          &kp SQT       &kp SLASH             &kp RIGHT_SHIFT
+&none               &none             &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(N4))         &none          &none     &mo 3   &kp LG(SPACE)                                                            &kp C_PLAY
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         layer_2 {
             bindings = <
-&none       &none   &none   &none    &none                      &none           &none      &kp F13       &kp LS(LA(LC(LG(L))))  &none
-&kp F2      &kp F6  &kp F7  &kp F10  &kp F12  &none     &none   &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW        &kp BACKSPACE
-&kp LSHIFT  &none   &none   &none    &none    &none     &trans  &none           &kp LC(A)  &kp LC(E)     &none                  &kp RIGHT_SHIFT
-&trans      &trans  &trans  &trans   &trans   &trans    &trans  &trans                                                          &none
+&kp TAB     &none   &none          &none           &none                           &none           &none      &kp F13       &kp LS(LA(LC(LG(L))))  &none
+&kp F2      &kp F6  &kp F7         &kp F10         &kp F12       &none     &none   &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW        &kp BACKSPACE
+&kp LSHIFT  &none   &kp C_AC_BACK  &kp C_PREVIOUS  &none         &none     &trans  &none           &kp LC(A)  &kp LC(E)     &none                  &kp RIGHT_SHIFT
+&trans      &trans  &trans         &trans          &kp LEFT_WIN  &trans    &trans  &trans                                                          &kp C_PLAY
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -98,10 +98,10 @@
 
         layer_3 {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &trans  &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK
-&kp F11  &kp F12  &trans  &trans  &trans   &trans    &trans  &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-&trans   &trans   &trans  &trans  &trans   &trans    &trans  &kp NUMBER_0                                            &kp PERIOD
+&kp F1       &kp F2          &kp F3      &kp F4        &kp F5                                &none         &kp KP_N7        &kp KP_N8        &kp KP_N9  &kp EQUAL
+&kp F6       &kp F7          &kp F8      &kp F9        &kp F10       &none           &trans  &kp SLASH     &kp KP_N4        &kp KP_N5        &kp KP_N6  &kp ASTERISK
+&kp F11      &kp F12         &none       &none         &none         &none           &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3  &kp PLUS
+&bootloader  &studio_unlock  &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &kp NUMBER_0                                               &kp PERIOD
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -131,10 +131,10 @@
 
         MOUSE {
             bindings = <
-&trans          &trans  &msc SCRL_DOWN  &trans                &trans                                   &trans  &trans    &trans    &trans  &trans
-&kp LEFT_WIN    &trans  &msc SCRL_UP    &mkp MB1              &mkp MB2               &trans    &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans  &trans  &trans    &trans    &trans  &trans
-&trans          &trans  &trans          &trans                &trans                 &trans    &trans  &trans                              &trans
+&trans          &trans  &msc SCRL_DOWN  &trans                &trans                                                 &trans                 &trans    &trans    &trans  &trans
+&kp LEFT_WIN    &trans  &msc SCRL_UP    &mkp MB1              &mkp MB2               &trans           &trans         &kp LG(LEFT_BRACKET)   &mkp MB1  &mkp MB2  &mo 5   &trans
+&kp LEFT_SHIFT  &trans  &trans          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans           &trans         &kp LG(RIGHT_BRACKET)  &trans    &trans    &trans  &trans
+&trans          &trans  &trans          &trans                &kp ENTER              &kp BACKSPACE    &kp BACKSPACE  &kp ENTER                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
