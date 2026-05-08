@@ -4,7 +4,6 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
         zmk,physical-layout = &physical_layout0;
     };
 
@@ -61,7 +60,6 @@
         display-name = "Orbee Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
-        zmk,studio-unlocked;
         keys
             /* Row 0: 10 keys (left 5 + right 5) */
             = <&key_physical_attrs 100 100    0  100  0  0  0>  /* RC(0,0)  x=0,  y=1 */
