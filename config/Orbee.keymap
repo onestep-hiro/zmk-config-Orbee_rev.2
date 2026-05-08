@@ -68,7 +68,7 @@
 &lt 3 Q           &kp W                  &kp E  &kp R                     &kp T                                          &kp Y  &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &lt 6 S                &kp D  &kp F                     &kp G                &mkp MB1       &none      &kp H  &kp J  &kp K      &kp L    &mt LEFT_CONTROL ENTER
 &mt LEFT_SHIFT Z  &kp X                  &kp C  &kp V                     &kp B                &mkp MB2       &none      &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &to 2                             &kp C_PLAY
+&kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp C_PLAY
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
