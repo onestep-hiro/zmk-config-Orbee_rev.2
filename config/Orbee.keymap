@@ -79,7 +79,7 @@
 &kp EXCLAMATION     &kp AT_SIGN       &kp HASH                  &kp DOLLAR             &kp PERCENT                      &kp CARET         &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)       &kp LS(LA(LC(LG(O))))  &kp LC(LG(N))  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL     &kp MINUS             &kp SEMICOLON
 &kp LEFT_SHIFT      &trans            &trans                    &kp LG(RIGHT_BRACKET)  &kp LC(LG(C))  &trans    &trans  &kp EXCLAMATION   &kp GRAVE          &kp SQT       &kp NON_US_BACKSLASH  &kp RIGHT_SHIFT
-&trans              &trans            &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(N4))         &trans         &trans    &to 3   &kp LG(SPACE)                                                            &none
+&trans              &trans            &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(N4))         &trans         &trans    &mo 3   &kp LG(SPACE)                                                            &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
