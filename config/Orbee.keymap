@@ -59,9 +59,9 @@
             tap-ms = <20>;
         };
 
-        new_behavior: new_behavior {
+        tap_hold_behavior: tap_hold_behavior {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "TAP_HOLD_BEHAVIOR";
             bindings = <&none>, <&none>;
 
             #binding-cells = <2>;
