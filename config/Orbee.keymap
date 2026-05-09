@@ -74,7 +74,7 @@
 
         default_layer {
             bindings = <
-&lt 3 Q           &kp W                  &kp E  &kp R                     &kp T                                          &kp Y  &kp U  &lt 5 I    &kp O    &kp P
+&lt 3 Q           &kp W                  &kp E  &kp R                     &kp T                                          &kp Y  &kp U  &kp I      &kp O    &kp P
 &kp A             &lt 6 S                &kp D  &kp F                     &kp G                &none          &none      &kp H  &kp J  &kp K      &kp L    &mt LEFT_CONTROL ENTER
 &mt LEFT_SHIFT Z  &kp X                  &kp C  &kp V                     &kp B                &none          &none      &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp BACKSPACE
@@ -140,10 +140,10 @@
 
         MOUSE {
             bindings = <
-&trans          &trans  &msc SCRL_DOWN  &trans                &trans                                                 &trans                 &trans    &trans        &trans  &trans
-&kp LEFT_WIN    &to 0   &msc SCRL_UP    &mkp MB1              &mkp MB2               &trans           &trans         &kp LG(LEFT_BRACKET)   &mkp MB1  &kp LEFT_WIN  &to 0   &trans
-&kp LEFT_SHIFT  &trans  &trans          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans           &trans         &kp LG(RIGHT_BRACKET)  &mkp MB2  &trans        &trans  &trans
-&trans          &trans  &trans          &trans                &kp ENTER              &kp BACKSPACE    &kp BACKSPACE  &kp ENTER                                              &trans
+&trans          &trans  &msc SCRL_DOWN  &trans                &trans                                          &trans                 &trans    &trans  &trans  &trans
+&none           &none   &msc SCRL_UP    &mkp MB1              &mkp MB2               &trans    &trans         &kp LG(LEFT_BRACKET)   &mkp MB1  &mo 5   &none   &trans
+&kp LEFT_SHIFT  &trans  &trans          &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans    &trans         &kp LG(RIGHT_BRACKET)  &mkp MB2  &trans  &trans  &trans
+&trans          &trans  &trans          &trans                &kp LEFT_WIN           &none     &kp BACKSPACE  &kp ENTER                                        &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
