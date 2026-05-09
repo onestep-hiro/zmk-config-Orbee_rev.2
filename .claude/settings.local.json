@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:api.github.com)",
       "Read(config/**)",
-      "Edit(config/**)"
+      "Edit(config/**)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:zmk.dev)"
     ]
   }
 }
