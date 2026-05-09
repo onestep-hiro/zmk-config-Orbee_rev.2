@@ -18,10 +18,10 @@
 #
 ---
 include:
-  - board: xiao_ble/nrf52840/zmk
+  - board: seeeduino_xiao_ble
     shield: Orbee_R rgbled_adapter
-  - board: xiao_ble/nrf52840/zmk
+  - board: seeeduino_xiao_ble
     shield: Orbee_L rgbled_adapter
-  - board: xiao_ble/nrf52840/zmk
+  - board: seeeduino_xiao_ble
     shield: settings_reset
  
