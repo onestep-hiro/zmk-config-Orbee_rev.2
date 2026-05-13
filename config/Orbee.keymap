@@ -12,9 +12,7 @@
     tapping-term-ms = <180>;
 };
 
-&lt {
-    tapping-term-ms = <180>;
-};
+&lt { tapping-term-ms = <180>; };
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -67,7 +65,7 @@
 &kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN C_VOL_UP>;
         };
 
         layer_1 {
@@ -83,10 +81,10 @@
 
         layer_2 {
             bindings = <
-&kp TAB     &none   &none          &none           &none                           &none           &none      &kp F13       &kp LS(LA(LC(LG(L))))  &none
-&kp F2      &kp F6  &kp F7         &kp F10         &kp F12       &none     &none   &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW        &kp BACKSPACE
-&kp LSHIFT  &none   &kp C_AC_BACK  &kp C_PREVIOUS  &none         &none     &trans  &none           &kp LC(A)  &kp LC(E)     &none                  &kp RIGHT_SHIFT
-&trans      &trans  &trans         &trans          &kp LEFT_WIN  &trans    &trans  &trans                                                          &kp C_PLAY
+&kp TAB     &none   &none          &none           &none                             &none           &none      &kp F13       &kp LS(LA(LC(LG(L))))  &none
+&kp F2      &kp F6  &kp F7         &kp F10         &kp F12       &none       &none   &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW        &kp BACKSPACE
+&kp LSHIFT  &none   &kp C_AC_BACK  &kp C_PREVIOUS  &none         &mkp MB2    &trans  &none           &kp LC(A)  &kp LC(E)     &none                  &kp RIGHT_SHIFT
+&trans      &trans  &trans         &trans          &kp LEFT_WIN  &trans      &trans  &trans                                                          &kp C_PLAY
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -94,10 +92,10 @@
 
         layer_3 {
             bindings = <
-&kp F1       &kp F2          &kp F3      &kp F4        &kp F5                                &none          &kp KP_N7        &kp KP_N8        &kp KP_N9  &kp EQUAL
-&kp F6       &kp F7          &kp F8      &kp F9        &kp F10       &none           &trans  &kp SLASH      &kp KP_N4        &kp KP_N5        &kp KP_N6  &kp ASTERISK
-&kp F11      &kp F12         &none       &none         &none         &none           &trans  &kp MINUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3  &kp PLUS
-&bootloader  &studio_unlock  &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &kp LG(KP_N0)                                               &kp PERIOD
+&kp F1       &kp F2          &kp F3      &kp F4        &kp F5                                &kp LS(SEMI)  &kp KP_N7        &kp KP_N8        &kp KP_N9  &kp EQUAL
+&kp F6       &kp F7          &kp F8      &kp F9        &kp F10       &none           &trans  &kp SLASH     &kp KP_N4        &kp KP_N5        &kp KP_N6  &kp ASTERISK
+&kp F11      &kp F12         &none       &none         &none         &none           &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3  &kp PLUS
+&bootloader  &studio_unlock  &bt BT_CLR  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &kp KP_N0                                                  &kp PERIOD
             >;
 
             sensor-bindings = <&scroll_up_down>;
