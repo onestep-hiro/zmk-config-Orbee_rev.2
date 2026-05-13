@@ -87,7 +87,7 @@
 &trans      &trans  &trans         &trans          &kp LEFT_WIN  &trans      &trans  &trans                                                          &kp C_PLAY
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         layer_3 {
