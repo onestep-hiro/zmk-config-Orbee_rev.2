@@ -65,7 +65,7 @@
 &kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
         };
 
         layer_1 {
@@ -76,7 +76,7 @@
 &none               &none             &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(N4))         &none          &none     &mo 3   &kp LG(SPACE)                                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
         layer_2 {
@@ -87,7 +87,7 @@
 &trans      &trans  &trans          &trans      &kp LEFT_WIN  &trans    &trans  &trans                                                          &kp C_PLAY
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_3 {
