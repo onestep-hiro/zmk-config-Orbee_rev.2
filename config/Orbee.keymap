@@ -59,10 +59,10 @@
 
         default_layer {
             bindings = <
-&lt 3 Q           &kp W                  &kp E  &kp R                     &kp T                                          &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A             &lt 6 S                &kp D  &kp F                     &kp G                &none          &none      &kp H  &kp J  &kp K      &kp L    &mt LEFT_CONTROL ENTER
-&mt LEFT_SHIFT Z  &kp X                  &kp C  &kp V                     &kp B                &none          &none      &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LS(LA(LC(LG(M))))  &none  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp BACKSPACE
+&lt 3 Q           &kp W                  &kp E         &kp R                     &kp T                                          &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A             &lt 6 S                &kp D         &kp F                     &kp G                &none          &none      &kp H  &kp J  &kp K      &kp L    &mt LEFT_CONTROL ENTER
+&mt LEFT_SHIFT Z  &kp X                  &kp C         &kp V                     &kp B                &none          &none      &kp N  &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp TAB           &kp LS(LA(LC(LG(M))))  &kp LEFT_ALT  &kp LC(LA(LS(LEFT_WIN)))  &mt LEFT_WIN ESCAPE  &lt 1 SPACE    &kp SPACE  &mo 2                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
@@ -81,10 +81,10 @@
 
         layer_2 {
             bindings = <
-&kp TAB     &none   &none           &none       &none                           &none           &none      &kp F13       &kp LS(LA(LC(LG(L))))  &none
-&kp F2      &kp F6  &kp F7          &kp F10     &kp F12       &trans    &trans  &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW        &kp BACKSPACE
-&kp LSHIFT  &none   &kp C_PREVIOUS  &kp C_NEXT  &none         &trans    &trans  &none           &kp LC(A)  &kp LC(E)     &none                  &kp RIGHT_SHIFT
-&trans      &trans  &trans          &trans      &kp LEFT_WIN  &trans    &trans  &trans                                                          &kp C_PLAY
+&kp TAB     &none   &none           &none           &none                           &none           &none      &kp F13       &kp LS(LA(LC(LG(L))))  &none
+&kp F2      &kp F6  &kp F7          &kp F10         &kp F12       &trans    &trans  &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT_ARROW        &kp BACKSPACE
+&kp LSHIFT  &none   &kp C_PREVIOUS  &kp LS(C_PLAY)  &kp C_NEXT    &trans    &trans  &none           &kp LC(A)  &kp LC(E)     &none                  &kp RIGHT_SHIFT
+&trans      &trans  &trans          &trans          &kp LEFT_WIN  &trans    &trans  &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
